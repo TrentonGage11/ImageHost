@@ -55,7 +55,8 @@ if ((shExpMatch(host, "webex.com") || shExpMatch(host, "*.webex.com")) ||
 	(shExpMatch(host, "teamviewer.com") || shExpMatch(host, "*.teamviewer.com")) ||
 	(shExpMatch(host, "ringcentral.com") || shExpMatch(host, "*.ringcentral.com")) ||
 	(shExpMatch(host, "zoom.com") || shExpMatch(host, "*.zoom.com")) ||
-	(shExpMatch(host, "zoom.us") || shExpMatch(host, "*.zoom.us")))
+	(shExpMatch(host, "zoom.us") || shExpMatch(host, "*.zoom.us")) || 
+	(shExpMatch(host, "discord.com") || shExpMatch(host, "*.discord.com")))
 {
 	return "DIRECT";
 }
@@ -69,7 +70,8 @@ if (isInNet(host, "17.0.0.0", "255.0.0.0") ||
 	(shExpMatch(host, "apple.imap.mail.yahoo.com") || shExpMatch(host, "*.apple.imap.mail.yahoo.com")) ||
 	(shExpMatch(host, "imap.gmail.com") || shExpMatch(host, "*.imap.gmail.com")) ||
 	(shExpMatch(host, "imap.aol.com") || shExpMatch(host, "*.imap.aol.com")) ||
-	(shExpMatch(host, "mzstatic.com") || shExpMatch(host, "*.mzstatic.com")))
+	(shExpMatch(host, "mzstatic.com") || shExpMatch(host, "*.mzstatic.com")) || 
+	(shExpMatch(host, "discord.com") || shExpMatch(host, "*.discord.com")))
 {
 	return "DIRECT";
 }
@@ -307,7 +309,8 @@ if (shExpMatch(host, "technet.microsoft.com") ||
 	shExpMatch(host, "c1.microsoft.com") ||
 	shExpMatch(host, "www.microsoft.com") ||
 	shExpMatch(host, "myanalytics-gcc.microsoft.com") ||
-	shExpMatch(host, "admin.onedrive.com"))
+	shExpMatch(host, "admin.onedrive.com") ||
+	shExpMatch(host, "discord.com"))
 {
 	return "DIRECT";
 }
